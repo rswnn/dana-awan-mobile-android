@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_margin="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar lewat nomor hp"
+        android:textColor="#000"
+        android:fontFamily="@font/quicksandbold"
+        android:textSize="26sp" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:outlineAmbientShadowColor="@color/gojekgreen"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+    </SearchView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

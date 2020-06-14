@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <!-- Style attributes -->
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+
+
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="counterTextAppearance">@style/HintText</item>
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="fontFamily">@font/quicksandregular</item>
+
+
+        <!-- Theme attributes -->
+        <item name="android:textColorHint">#80000000</item>
+
+        <item name="colorControlNormal">@color/gojekgreen</item>
+        <item name="colorControlActivated">@color/gojekgreen</item>
+
+    </style>
+
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/gojekgreen</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="fontFamily">@font/quicksandregular</item>
+    </style>
+    <style name="Password" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:inputType">textPassword</item>
+        <item name="fontFamily">@font/quicksandregular</item>
+        <item name="android:fontFamily">@font/quicksandbold</item>
+    </style>
+</resources>

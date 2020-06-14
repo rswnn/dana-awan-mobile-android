@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gojekgreen"
+    android:orientation="vertical"
+    tools:context=".ThanksFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_weight="0"
+            android:background="#00CF2020"
+            android:src="@drawable/atm" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran berhasil"
+            android:fontFamily="@font/quicksandbold"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Hore ! Pembayaranmu sudah selesai."
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Jumlah Pembayaran"
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvAmountTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="50000"
+            android:fontFamily="@font/quicksandbold"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="#fafafa"
+            android:textColor="@color/gojekgreen"
+            android:fontFamily="@font/quicksandbold"
+            android:text="kembali ke Home" />
+    </LinearLayout>
+</LinearLayout>

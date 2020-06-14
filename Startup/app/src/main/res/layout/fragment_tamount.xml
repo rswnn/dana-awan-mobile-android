@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.TAmountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_margin="5pt"
+        android:textStyle="bold"
+        android:fontFamily="@font/quicksandbold"
+        android:text="Transfer ke :" />
+
+    <LinearLayout
+        android:layout_margin="5pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="#000"
+            android:text="nomor : " />
+
+        <TextView
+            android:id="@+id/tvAmountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/nameLabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="#000"
+            android:text="Nama : " />
+
+        <TextView
+            android:id="@+id/tvAmountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/nameLabel" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_margin="5pt"
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:ems="10"
+        android:hint="Jumlahnya ya !"
+        android:gravity="center"
+        android:fontFamily="@font/quicksandlight"
+        android:background="@drawable/bigrounded"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gojekgreen"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Konfirmasi" />
+    </LinearLayout>
+
+
+</LinearLayout>
