@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_item">Selected item:</string>
+    <string-array name="labels_array">
+        <item>BCA</item>
+        <item>MANDIRI</item>
+        <item>BTN</item>
+        <item>BRI</item>
+    </string-array>
 </resources>

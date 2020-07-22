@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".RegisterMerchantActivity"></activity>
+        <activity android:name=".WithdrawActivity" />
+        <activity android:name=".TopUpActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".PinRegistrationActivity" />
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>

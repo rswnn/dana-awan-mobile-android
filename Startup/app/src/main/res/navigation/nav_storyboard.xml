@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_mainFragment_to_clarificationFragment"
             app:destination="@id/clarificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_topUpFragment"
+            app:destination="@id/topUpFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -63,4 +69,14 @@
         android:name="com.example.startup.ThanksFragment"
         android:label="fragment_thanks"
         tools:layout="@layout/fragment_thanks" />
+    <fragment
+        android:id="@+id/topUpFragment"
+        android:name="com.example.startup.fragment.TopUpFragment"
+        android:label="fragment_top_up"
+        tools:layout="@layout/fragment_top_up" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.startup.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
 </navigation>

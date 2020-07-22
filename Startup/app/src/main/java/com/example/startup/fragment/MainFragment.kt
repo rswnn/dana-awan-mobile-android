@@ -2,6 +2,7 @@ package com.example.startup.fragment
 
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,10 +12,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
-import com.example.startup.R
+import com.example.startup.*
 import com.example.startup.api.RetrofitClient
 import com.example.startup.models.LoginResponse
 import com.example.startup.storage.SharedPrefManager
+import kotlinx.android.synthetic.main.activity_history.*
 import kotlinx.android.synthetic.main.fragment_main.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -69,7 +71,22 @@ class MainFragment : Fragment() {
         }
 
         ivWithdraw.setOnClickListener {
-            view.findNavController().navigate(R.id.action_mainFragment_to_clarificationFragment)
+            var intent = Intent(context, WithdrawActivity::class.java)
+            startActivity(intent)
+        }
+
+        ivTopUp.setOnClickListener {
+            view.findNavController().navigate(R.id.action_mainFragment_to_topUpFragment)
+        }
+
+        imageHistory.setOnClickListener {
+            var intent = Intent(context, HistoryActivity::class.java)
+            startActivity(intent)
+        }
+
+        ivTopUp.setOnClickListener {
+            var intent = Intent(context, TopUpActivity::class.java)
+            startActivity(intent)
         }
 
         itemswipetorefresh.setProgressBackgroundColorSchemeColor(ContextCompat.getColor(context!!,

@@ -41,13 +41,16 @@ class SharedPrefManager private constructor(private val mCtx: Context) {
             return User(
                 sharedPreferences.getInt("id", -1),
                 sharedPreferences.getString("name", null)!!,
+                sharedPreferences.getString("email", "")!!,
                 sharedPreferences.getString("username", null)!!,
                 sharedPreferences.getString("password", null)!!,
                 sharedPreferences.getString("phone_number", null)!!,
                 sharedPreferences.getString("pin", null)!!,
                 sharedPreferences.getInt("cash", 0),
+                sharedPreferences.getBoolean("active", true),
                 sharedPreferences.getString("createdAt", null)!!,
-                sharedPreferences.getString("updatedAt", null)!!
+                sharedPreferences.getString("updatedAt", null)!!,
+                sharedPreferences.getString("level", "")!!
             )
         }
 

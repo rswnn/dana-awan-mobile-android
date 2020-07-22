@@ -4,7 +4,8 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val BASE_URL = "https://danaawanbackend.herokuapp.com/"
+//const val BASE_URL = "https://danaawanbackend.herokuapp.com/"
+const val BASE_URL = "http://192.168.43.197:3000"
 
 object RetrofitClient {
 
